@@ -238,7 +238,7 @@ resource "aws_ecs_service" "fastmcp_service" {
   cluster         = aws_ecs_cluster.mcp_cluster.id
   task_definition = aws_ecs_task_definition.mcp.arn
 
-  desired_count    = 1
+  desired_count    = var.desired_task
   launch_type      = "FARGATE"
   platform_version = "LATEST"
 

@@ -17,3 +17,8 @@ variable "env_tag" {
   type    = string
   default = "Production"
 }
+
+variable "desired_task" {
+  type = number
+  default = 1
+}
