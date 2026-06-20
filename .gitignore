@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Environments / Virtual Envs
+.env
+.venv
+env/
+venv/
+uv.lock
+
+# IDE / Editor
+.vscode/
+.idea/
+.spyderproject
+
+# Packaging / Build
+build/
+dist/
+*.egg-info/
+*.so
+
+# Coverage / Logs / Temp
+.pytest_cache/
+.coverage
+*.log
+.DS_Store
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate.backup
+terraform.tfstate

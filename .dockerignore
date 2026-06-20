@@ -1,0 +1,76 @@
+# ==============================================================================
+# Python Dockerignore Template
+# ==============================================================================
+
+# --- Byte-compiled / optimized / DLL files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- C extensions ---
+*.so
+
+# --- Local Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+ENV.bak/
+env.bak/
+bin/
+lib/
+include/
+deployments/
+
+# --- Package Managers & Build Artifacts ---
+.eggs/
+*.egg-info/
+*.egg
+build/
+dist/
+wheels/
+*.whl
+share/python-wheels/
+
+# --- Environment Variables & Secrets ---
+.env
+*.env
+.env.*
+secrets.json
+*.pem
+*.key
+
+# --- Testing & Code Quality ---
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# --- Git & CI/CD ---
+.git
+.gitignore
+.github/
+.gitlab-ci.yml
+.circleci/
+
+# --- IDEs & System Files ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Docker Files (Optional) ---
+Dockerfile
+docker-compose.yml
+compose.yaml
+.dockerignore
