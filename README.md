@@ -27,6 +27,27 @@ docker-compose up -f deployments/composer/docker-compose.yml
 
 ---
 
+## K8s Deployment
+If you are using kubernetes cluster on local like me on docker desktop. You need to configure 
+`kubectl config get-contexts && kubectl config use-context docker-desktop`
+
+Create deployment
+```bash
+kubectl apply -f deployments/k8s/deployment.yaml 
+```
+Create Service
+```bash
+kubectl apply -f deployments/k8s/service.yaml 
+```
+Create Horizontal Pod Autoscaler
+```bash
+kubectl apply -f deployments/k8s/hpa.yaml 
+```
+Create Pod Disruption Budget
+```bash
+kubectl apply -f deployments/k8s/pdb.yaml 
+```
+
 ## AWS Deployment
 
 ```bash

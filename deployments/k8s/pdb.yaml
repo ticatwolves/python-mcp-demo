@@ -1,0 +1,10 @@
+
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: mcp-demo
+spec:
+  minAvailable: 20%
+  selector:
+    matchLabels:
+      app: mcp-demo

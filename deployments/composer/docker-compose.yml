@@ -1,5 +1,7 @@
 services:
   mcp:
+    container_name: mcp-demo
+    image: mcp-demo
     build:
       context: ../..
     ports:
